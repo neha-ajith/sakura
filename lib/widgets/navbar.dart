@@ -26,8 +26,12 @@ class _NavBarState extends State<NavBar> {
             children: [
               Logo(),
               Row(children: [
-                NavItem("Home"),
-                NavItem("About"),
+                NavItem(
+                  "Home",
+                ),
+                NavItem(
+                  "About",
+                ),
               ]),
             ],
           ),

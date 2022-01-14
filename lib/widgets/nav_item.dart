@@ -15,9 +15,12 @@ class _NavItemState extends State<NavItem> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Text(
-        widget.item,
-        style: TextStyle(fontSize: 20, color: Color(0xffFF6363)),
+      child: TextButton(
+        onPressed: () {},
+        child: Text(
+          widget.item,
+          style: TextStyle(fontSize: 20, color: Color(0xffFF6363)),
+        ),
       ),
     );
   }

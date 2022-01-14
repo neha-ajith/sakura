@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:sakura/widgets/post_sample.dart';
 import 'package:sakura/widgets/sidenote.dart';
 
-double opacityPost = 0;
-
 class PostView extends StatefulWidget {
   const PostView({Key? key}) : super(key: key);
 
@@ -16,37 +14,33 @@ class PostView extends StatefulWidget {
 class _PostViewState extends State<PostView> {
   @override
   Widget build(BuildContext context) {
-    return AnimatedOpacity(
-      duration: Duration(seconds: 1),
-      opacity: opacityPost,
-      child: SizedBox(
-        child: Padding(
-          padding: const EdgeInsets.all(20),
-          child: IntrinsicHeight(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                VerticalDivider(
-                  color: Color.fromARGB(255, 73, 69, 69),
-                  thickness: 0.5,
+    return SizedBox(
+      child: Padding(
+        padding: const EdgeInsets.all(20),
+        child: IntrinsicHeight(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              VerticalDivider(
+                color: Color.fromARGB(255, 73, 69, 69),
+                thickness: 0.5,
+              ),
+              SizedBox(
+                width: 1000,
+                child: Column(
+                  children: [
+                    PostSample(),
+                    SizedBox(height: 15),
+                    PostSample(),
+                  ],
                 ),
-                SizedBox(
-                  width: 1000,
-                  child: Column(
-                    children: [
-                      PostSample(),
-                      SizedBox(height: 15),
-                      PostSample(),
-                    ],
-                  ),
-                ),
-                VerticalDivider(
-                  color: Color.fromARGB(255, 73, 69, 69),
-                  thickness: 0.5,
-                ),
-                SideNote()
-              ],
-            ),
+              ),
+              VerticalDivider(
+                color: Color.fromARGB(255, 73, 69, 69),
+                thickness: 0.5,
+              ),
+              SideNote()
+            ],
           ),
         ),
       ),
