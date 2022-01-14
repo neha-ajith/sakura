@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:sakura/widgets/post_sample.dart';
 import 'package:sakura/widgets/sidenote.dart';
 
-class HomeView extends StatefulWidget {
-  const HomeView({Key? key}) : super(key: key);
+class HomeViewDesktop extends StatefulWidget {
+  const HomeViewDesktop({Key? key}) : super(key: key);
 
   @override
-  _HomeViewState createState() => _HomeViewState();
+  _HomeViewDesktopState createState() => _HomeViewDesktopState();
 }
 
-class _HomeViewState extends State<HomeView> {
+class _HomeViewDesktopState extends State<HomeViewDesktop> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(

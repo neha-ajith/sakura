@@ -1,16 +1,14 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 import 'package:sakura/widgets/sidenote.dart';
 
-class PostView extends StatefulWidget {
-  const PostView({Key? key}) : super(key: key);
+class PostViewDesktop extends StatefulWidget {
+  const PostViewDesktop({Key? key}) : super(key: key);
 
   @override
-  _PostViewState createState() => _PostViewState();
+  _PostViewDesktopState createState() => _PostViewDesktopState();
 }
 
-class _PostViewState extends State<PostView> {
+class _PostViewDesktopState extends State<PostViewDesktop> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(

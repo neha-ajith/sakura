@@ -1,8 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'package:sakura/app_view.dart';
+import 'package:sakura/screens/app.dart';
 
 class PostSample extends StatefulWidget {
   const PostSample({
@@ -34,7 +33,7 @@ class _PostSampleState extends State<PostSample> {
         SizedBox(height: 10),
         TextButton(
             onPressed: () {
-              AppView.of(context)?.setState(() {
+              App.of(context)?.setState(() {
                 index = 2;
               });
             },

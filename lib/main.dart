@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:sakura/app_view.dart';
+import 'package:sakura/screens/app.dart';
 
 void main() {
   runApp(const Main());
@@ -19,7 +19,7 @@ class _MainState extends State<Main> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Sakura",
-      home: AppView(),
+      home: App(),
       theme: ThemeData(fontFamily: 'General'),
     );
   }

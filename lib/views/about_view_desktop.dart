@@ -1,16 +1,14 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
-
 import 'package:flutter/material.dart';
 import 'package:sakura/widgets/sidenote.dart';
 
-class AboutView extends StatefulWidget {
-  const AboutView({Key? key}) : super(key: key);
+class AboutViewDesktop extends StatefulWidget {
+  const AboutViewDesktop({Key? key}) : super(key: key);
 
   @override
-  _AboutViewState createState() => _AboutViewState();
+  _AboutViewDesktopState createState() => _AboutViewDesktopState();
 }
 
-class _AboutViewState extends State<AboutView> {
+class _AboutViewDesktopState extends State<AboutViewDesktop> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
