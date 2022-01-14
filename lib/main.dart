@@ -17,6 +17,10 @@ class Main extends StatefulWidget {
 class _MainState extends State<Main> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: AppView());
+    return MaterialApp(
+      title: "Sakura",
+      home: AppView(),
+      theme: ThemeData(fontFamily: 'General'),
+    );
   }
 }

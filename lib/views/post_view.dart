@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:sakura/widgets/post_sample.dart';
 import 'package:sakura/widgets/sidenote.dart';
 
 class PostView extends StatefulWidget {
@@ -29,9 +28,9 @@ class _PostViewState extends State<PostView> {
                 width: 1000,
                 child: Column(
                   children: [
-                    PostSample(),
-                    SizedBox(height: 15),
-                    PostSample(),
+                    // PostSample(),
+                    // SizedBox(height: 15),
+                    // PostSample(),
                   ],
                 ),
               ),

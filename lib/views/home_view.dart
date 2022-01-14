@@ -14,8 +14,7 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 120, bottom: 50),
+    return SizedBox(
       child: IntrinsicHeight(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -23,6 +22,7 @@ class _HomeViewState extends State<HomeView> {
             VerticalDivider(
               color: Color.fromARGB(255, 73, 69, 69),
               thickness: 0.5,
+              endIndent: 50,
             ),
             SizedBox(
               width: 1000,
@@ -37,6 +37,7 @@ class _HomeViewState extends State<HomeView> {
             VerticalDivider(
               color: Color.fromARGB(255, 73, 69, 69),
               thickness: 0.5,
+              endIndent: 50,
             ),
             SideNote()
           ],
