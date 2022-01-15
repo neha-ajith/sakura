@@ -33,8 +33,10 @@ class _PostSampleState extends State<PostSample> {
         SizedBox(height: 10),
         TextButton(
             onPressed: () {
-              App.of(context)?.setState(() {
-                index = 2;
+              Future.delayed(Duration(milliseconds: 500), () {
+                App.of(context)?.setState(() {
+                  index = 2;
+                });
               });
             },
             child: Text(

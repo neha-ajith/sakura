@@ -117,8 +117,10 @@ class _AppState extends State<App> {
                   children: [
                     TextButton(
                       onPressed: () {
-                        setState(() {
-                          index = 0;
+                        Future.delayed(Duration(milliseconds: 1000), () {
+                          setState(() {
+                            index = 0;
+                          });
                         });
                       },
                       child: Text(
@@ -132,8 +134,10 @@ class _AppState extends State<App> {
                     ),
                     TextButton(
                       onPressed: () {
-                        setState(() {
-                          index = 1;
+                        Future.delayed(Duration(milliseconds: 1000), () {
+                          setState(() {
+                            index = 1;
+                          });
                         });
                       },
                       child: Text(
