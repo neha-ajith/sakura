@@ -9,3 +9,7 @@
 body a{
     @apply m-4 text-red-500 font-bold hover:text-black;
 }
+
+.page-header{
+    @apply md:text-5xl text-3xl font-semibold mt-10 mb-4 text-red-400;
+}

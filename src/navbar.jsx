@@ -64,7 +64,7 @@ const NavBar = () => {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="https://github.com">Loved it? Star on Github</a>
+                <a target="_blank" href="https://github.com/neha-ajith/sakura">Loved it? Star on Github</a>
               </li>
             </ul>
           </div>
