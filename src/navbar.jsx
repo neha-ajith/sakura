@@ -9,7 +9,9 @@ const NavBar = () => {
       <div className="navbar justify-between px-4 mx-auto md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3">
-            <h1 className="text-5xl md:text-7xl font-banner text-banner">Sakura</h1>
+            <h1 className="text-5xl md:text-7xl font-banner text-banner">
+              Sakura
+            </h1>
             <div className="md:hidden">
               <button
                 className="p-2 text-red-400 rounded-md outline-none focus:border-red-400 focus:border hover:text-black"
@@ -50,17 +52,17 @@ const NavBar = () => {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`md:flex justify-self-center pb-3 mt-8 md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center text-right space-y-8 md:flex md:space-x-6 md:space-y-0">
-              
-               <li> <Link to='/'>Home</Link> </li>
-            
-              {/* <li>
-              <Link to='/'>About</Link> 
-              </li> */}
+            <ul className="md:flex text-right">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
               <li>
                 <a href="https://github.com">Loved it? Star on Github</a>
               </li>
